@@ -1,0 +1,3 @@
+# Redrob Candidate Ranker requirements
+# This project runs entirely on Python standard library modules (argparse, json, gzip, csv, sys, os, re, datetime)
+# No external packages are required for ranking, guaranteeing sub-second start times.

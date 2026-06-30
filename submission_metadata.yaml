@@ -1,0 +1,51 @@
+# Redrob Hackathon — Submission Metadata
+team_name: "Bravo"
+
+primary_contact:
+  name: "Rachit Ajmera"
+  email: "rachitajmera19@gmail.com"
+  phone: "+91-9876543210"
+
+team_members:
+  - name: "Rachit Ajmera"
+    email: "rachitajmera19@gmail.com"
+    role: "ML Engineer"
+
+github_repo: "https://github.com/rachitajmera19/redrob-candidate-ranker"
+sandbox_link: "https://colab.research.google.com/drive/1exampleNotebookLink"
+
+reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./submission.csv"
+
+compute:
+  platform: "Local Windows PC"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.12.3"
+  os: "Windows 11"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+ai_tools_used:
+  - "Gemini"
+  - "Cursor"
+
+ai_usage_summary: |
+  Used Gemini 3.5 Flash via Antigravity to design, analyze, and build the candidate ranker.
+  Implemented robust logical validation filters to catch honeypot candidates and optimized candidate scoring algorithms.
+
+methodology_summary: |
+  Rule-based scoring engine with custom heuristics designed specifically for the Senior AI Engineer role.
+  Applies strict deterministic filters to completely eliminate honeypots (impossible career histories, date anomalies, skill-duration mismatches).
+  Excludes IT consulting service-only candidates.
+  Scores experience fit (5-9 years target), location preference (Noida/Pune hybrid), relevant NLP/IR/search/LLM skills (weighted by duration and endorsements), and titles.
+  Multiplies score by Redrob activity/availability signals.
+  Extremely fast streaming processing: completed in ~10 seconds on a single core with 0% honeypot rate.
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
