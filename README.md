@@ -1,6 +1,6 @@
 # Redrob Candidate Discovery & Ranking Challenge
 
-This repository contains the winning candidate discovery and ranking system developed for the **Senior AI Engineer — Founding Team** role at **Redrob AI**.
+This repository contains the winning candidate discovery and ranking system developed for the**Redrob AI**.
 
 ## System Architecture
 
